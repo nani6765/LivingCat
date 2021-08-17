@@ -40,7 +40,6 @@ app.get("/", (req, res) => {
   Main.findOne({ name: "LivingCat" })
     .exec()
     .then((response) => {
-      console.log(response);
       return res.render("index.ejs", {
         total: response.total,
       });
@@ -64,7 +63,6 @@ app.post("/indexResult", (req, res) => {
           Main.findOne({ name: "LivingCat" })
             .exec()
             .then((response) => {
-              console.log(response);
               return res.render("indexResult.ejs", {
                 data: result,
                 total: response.total,
