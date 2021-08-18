@@ -2,8 +2,10 @@ const url = "https://livingcat.herokuapp.com/";
 
 function setShare() {
   var resultImg = document.querySelector("#resultImg");
-  var resultAlt = resultImg.firstChild.alt;
+  var resultAlt = resultImg.firstElementChild.alt;
   const shareTitle = "고양이로 태어난다면";
+  console.log("?", resultAlt);
+  console.log(infoList[resultAlt]);
   const shareDes = infoList[resultAlt].name;
   const shareImage = url + "img/image-" + resultAlt + ".png";
   const shareURL = url + "result/" + resultAlt;
