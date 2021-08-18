@@ -26,45 +26,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/default.css">
-    <link rel="stylesheet" href="./css/result.css">
-
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <script>
-        Kakao.init('a515a14a12b9ade159f9fc39aa43a36a');
-        Kakao.isInitialized();
-    </script>
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/result.css">
 </head>
 
 <body>
     <div class="wrap mx-auto">
         <div class="container">
             <section id="result" class="mx-auto my-5 py-5 px-3">
-                <p style="margin-bottom: 0px; font-size:8px; font-family:'Nanum Gothic', sans-serif">
-                    총 <span class="totalUser" data-total="<%=total%>"></span>명 중,
-                    <span class="resultNum" data-total="<%=resultNum%>"></span>이 같은 결과가 나왔어요!
-                </p>
                 <div id="resultImg" class="my-3 col-md-6 col-sm-10 col-12 mx-auto">
-                    <img id="targetImg" src="/img/image-<%=data%>.png" alt="<%=data%>" class="img-fluid">
+                    <img src="/img/image-11.png" alt="11" class="img-fluid">
                 </div>
                 <script type="text/javascript">
                     function moveHome() {
                         location.href = "/";
                     }
                 </script>
-                <button type="button" class="gohome mt-3 py-2 px-3" onclick="js:setShare()"
-                    style="background-color:#F7E600">카카오톡 공유하기</button>
                 <button type="button" class="gohome mt-3 py-2 px-3" onclick="js:moveHome()">
-                    🐱 다시 하려면 여기를 누르세요!🐱
+                    🐱 나도 알아보려면 여기를 누르세요!🐱
                 </button>
 
             </section>
         </div>
     </div>
-
-    <script src=".js/data.js"></script>
-    <script src="./js/result.js" charset="utf-8"></script>
-    <script scr="./js/share.js" charset="utf-8"></script>
 </body>
 
 </html>

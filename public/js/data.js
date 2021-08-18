@@ -1,22 +1,3 @@
-/*
- 'ISFJ' 0 러시안 블루
- 'INFP' 1 샴
- 'INFJ' 2 페르시안
- 'ESTP' 3 뱅갈 터키시
- 'ENFJ' 4 터키시 앙고라
- 'ESFJ' 5 아비시니안
- 'INTP' 6 노르웨이 숲
- 'ESFP' 7 아메리칸 숏헤어
- 'ENFP' 8 코리안 숏헤어
- 'ESTJ' 9 엑죠틱
- 'ISFP' 10 스코티시 폴드
- 'ENTJ' 11 먼치킨
- 'ISTJ' 12 렉돌
- 'ISTP' 13 브리티시 숏헤어
- 'ENTP' 14 스핑크스
- 'INTJ' 15 메인쿤
-*/
-
 const qnaList = [
   {
     q: "새로운 환경에서<br>일하게 되었을 때!",
@@ -146,67 +127,67 @@ const qnaList = [
 
 const infoList = [
   {
-    name: " ",
+    name: "러시안 블루",
     desc: " ",
   },
   {
-    name: " ",
+    name: "샴",
     desc: " ",
   },
   {
-    name: " ",
+    name: "페르시안",
     desc: " ",
   },
   {
-    name: " ",
+    name: "뱅갈 터키시",
     desc: " ",
   },
   {
-    name: " ",
+    name: "터키시 앙고라",
     desc: " ",
   },
   {
-    name: " ",
+    name: "아비시니안",
     desc: " ",
   },
   {
-    name: " ",
+    name: "노르웨이 숲",
     desc: " ",
   },
   {
-    name: " ",
+    name: "아메리칸 숏헤어",
     desc: " ",
   },
   {
-    name: " ",
+    name: "코리안 숏헤어",
     desc: " ",
   },
   {
-    name: " ",
+    name: "엑죠틱",
     desc: " ",
   },
   {
-    name: " ",
+    name: "스코티시 폴드",
     desc: " ",
   },
   {
-    name: " ",
+    name: "먼치킨",
     desc: " ",
   },
   {
-    name: " ",
+    name: "렉돌",
     desc: " ",
   },
   {
-    name: " ",
+    name: "브리티시 숏헤어",
     desc: " ",
   },
   {
-    name: " ",
+    name: "스핑크스",
     desc: " ",
   },
   {
-    name: " ",
+    name: "메인쿤",
     desc: " ",
   },
 ];

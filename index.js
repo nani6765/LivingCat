@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const MongoClient = require("mongodb").MongoClient;
 const port = process.env.PORT || 5000;
 const http = require("http").createServer(app);
 const config = require("./config/key");
@@ -20,6 +19,8 @@ app.use(
 
 //Using ejs template
 app.set("view engine", "ejs");
+
+app.use("/result", require("./routes/page.js"));
 
 mongoose
   .connect(config.mongoURI, {
@@ -78,5 +79,15 @@ app.post("/indexResult", (req, res) => {
 });
 
 app.get("/indexResult", (req, res) => {
-  res.render("index.ejs", {});
+  Main.findOne({ name: "LivingCat" })
+    .exec()
+    .then((response) => {
+      return res.render("index.ejs", {
+        total: response.total,
+      });
+    })
+    .catch((err) => {
+      console.log(err);
+      return res.status(400).json({ success: false, err });
+    });
 });
